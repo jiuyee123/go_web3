@@ -15,7 +15,7 @@ const { chains, publicClient, webSocketPublicClient } = configureChains(
   [publicProvider()]
 );
 
-const projectId = "YOUR_PROJECT_ID"; // Replace with your project ID
+const projectId = "1e71fdcad97bd3325fde8491f2894372"; // Replace with your project ID
 
 const { wallets } = getDefaultWallets({
   appName: "Rocket App",
