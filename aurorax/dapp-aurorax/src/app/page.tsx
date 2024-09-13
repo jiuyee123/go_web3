@@ -1,4 +1,4 @@
-import ContractReader from "../components/ContractReader";
+import ContractReader from "../components/LockContractReader";
 
 export default function Home() {
   return (
