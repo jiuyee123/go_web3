@@ -11,3 +11,9 @@ REPORT_GAS=true npx hardhat test
 npx hardhat node
 npx hardhat ignition deploy ./ignition/modules/Lock.ts
 ```
+
+#### 部署成功之后的合约地址
+
+Deployed Addresses
+
+AuroraxTokenModule#AuroraxToken - 0xD37bBDb027798F3465865cF18446d8A0cd2c0BB7

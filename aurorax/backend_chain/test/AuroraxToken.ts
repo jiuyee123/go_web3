@@ -1,12 +1,12 @@
 const { expect } = require("chai");
 import hre from "hardhat";
-import { MyToken } from "../typechain-types"; // 自动生成的类型
+import { AuroraxToken } from "../typechain-types"; // 自动生成的类型
 import { SignerWithAddress } from "@nomicfoundation/hardhat-ethers/signers";
 
 
 describe("MyToken", function() {
 
-    let myToken: MyToken;
+    let myToken: AuroraxToken;
     let owner: SignerWithAddress;
     let addr1: SignerWithAddress;
     let addr2: SignerWithAddress;
@@ -14,13 +14,13 @@ describe("MyToken", function() {
 
     beforeEach(async function () {
         // 获取合约工厂
-        const MyTokenFactory = await hre.ethers.getContractFactory("MyToken");
+        const MyTokenFactory = await hre.ethers.getContractFactory("AuroraxToken");
 
         // 获取 Signer
         [owner, addr1, addr2, addr3] = await hre.ethers.getSigners();
 
         // 部署合约
-        myToken = (await MyTokenFactory.deploy("Aurorax", "AUR")) as MyToken;
+        myToken = (await MyTokenFactory.deploy("Aurorax", "AUR")) as AuroraxToken;
     });
 
     it("部署后，所有代币都分配给合约拥有者", async function () {
