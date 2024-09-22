@@ -17,3 +17,4 @@ npx hardhat ignition deploy ./ignition/modules/Lock.ts
 Deployed Addresses
 
 AuroraxTokenModule#AuroraxToken - 0xD37bBDb027798F3465865cF18446d8A0cd2c0BB7
+CustomUSDCTokenModule#CustomUSDCToken - 0x7e9e26FdCa0787A76DbD2EEBaab0b989132D5175
